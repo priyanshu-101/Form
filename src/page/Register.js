@@ -22,7 +22,7 @@ const RegistrationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', formData, {
+      const response = await axios.post('https://form-backend-1z4u.onrender.com/api/auth/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
